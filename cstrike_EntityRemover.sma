@@ -2,13 +2,13 @@
 #include < amxmisc >
 #include < fakemeta >
 
-/* Arquivo para armazenar a lista de entidades.
-* Nota : Deve estar dentro da pasta configs. */
+/* File to store the entities' list.
+* note : must to be inside configs folder. */
 #define SZ_ENTITY_LIST "cstrike_entity_remover.ini"
 
-/* Máximo de caracteres por linha.
-* troque se tiver problemas com a
-* leitura das entidades da lista. */
+/* Maximum of characters per line.
+* change it if you're facing issues
+* with the entities' list reading. */
 #define MAX_DATA_LEN 48
 
 new Trie:g_tEntities;
@@ -55,10 +55,10 @@ bool:LoadSettings()
 
 	if ( !( fFile = fopen( szFile, "r" ) ) )
 	{
-		set_fail_state( "[EntityRemover] A lista de entidades nao foi encontrada. Plugin interrompido." );
+		set_fail_state( "[EntityRemover] The entities' list wasn't found. Plugin stopped." );
 		return false;
 	}
-	new const SZ_ALLMAPS[] = "TodosMapas";
+	new const SZ_ALLMAPS[] = "AllMaps";
 	new szData	[ MAX_DATA_LEN + 1 ];
 	new szMap	[ 32 ];
 	new iEnts;
