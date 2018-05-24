@@ -8,23 +8,7 @@ Got it, but, what does an entity mean ? Entities are objects which follow some b
 # How to use:
 This plugin works over external settings, that means that it'll load the entities list from a file defined by you. By default, I defined this file as "cstrike_entity_remover.ini" and it must to be inside "configs" folder.
 
-For entities' removal in all maps, inside "AllMaps", define your entity list. Example:
-
-AllMaps
-{
-    func_buyzone
-}
-
-
+For entities' removal in all maps, inside "AllMaps", define your entity list.
 For entities' removal in spefific maps, specific the map name and define the entity list. Example:
 
-cs_assault
-{
-    func_door
-    func_door_rotating
-}
-
-de_dust2
-{
-    func_breakable
-}
+Please, check the "cstrike_entity_remover.ini" for the structure example.
